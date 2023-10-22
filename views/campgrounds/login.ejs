@@ -1,0 +1,167 @@
+<% layout('layout/boilerPlate') %>
+<br>
+<section class="vh-60 p-5 mb-6 rounded" style="background-color: beige;height:fit-content;box-shadow: 0px 0px 10px black;">
+    <div class="container-fluid h-custom">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-md-9 col-lg-6 col-xl-5">
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+            class="img-fluid" alt="Sample image" >
+        </div>
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+          <form id="contactForm">
+            <!-- Email input -->
+            <div class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Email address</label>
+              <input type="email" id="email" class="form-control form-control-lg required"
+                placeholder="Enter a valid email address" required />
+            </div>
+  
+            <!-- Password input -->
+            <div class="form-outline mb-3">
+              <label class="form-label" for="form3Example4">Password</label>
+              <input type="password" id="Pass" class="form-control form-control-lg"
+                placeholder="Enter password" />
+            </div>
+  
+            <div class="d-flex justify-content-between align-items-center">
+              <!-- Checkbox -->
+              <div class="form-check mb-0">
+                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
+                <label class="form-check-label" for="form2Example3">
+                  Remember me
+                </label>
+              </div>
+              <a href="#!" class="text-body">Forgot password?</a>
+            </div>
+  
+            <div class="text-center text-lg-start mt-4 pt-2">
+              <button type="button" class="btn btn-primary btn-lg"
+                style="padding-left: 2.5rem; padding-right: 2.5rem;" id="signin">Login</button>
+              <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a href="/campground/signup"
+                  class="link-danger">Signup</a></p>
+            </div>
+  
+            <div class="divider d-flex align-items-center my-4">
+              <p class="text-center fw-bold mx-3 mb-0">Or</p>
+            </div>
+
+            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+              <p class="lead fw-normal mb-0 me-3">Login with</p>
+              &nbsp;&nbsp;
+  
+              <img
+              height="40px"
+              width="40px"
+              alt=""
+              src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"
+            / >
+  
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img
+            height="40px"
+            width="40px"
+            alt=""
+            src="https://www.freepnglogos.com/uploads/facebook-logo-27.png"
+          / >
+
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <img
+          height="40px"
+          width="40px"
+          alt=""
+          src="https://www.freepnglogos.com/new-twitter-x-logo-transparent-png-4.png"
+        / >
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </section>
+  
+<script type="module">
+    document.getElementById("contactForm").addEventListener('submit',(event)=>{
+     event.preventDefault()
+    })
+     // Import the functions you need from the SDKs you need
+     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+     import { getDatabase, ref, get,set,child, update } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+     import { getAuth,
+     createUserWithEmailAndPassword,
+     signInWithEmailAndPassword,
+     onAuthStateChanged,
+     signOut} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+     // TODO: Add SDKs for Firebase products that you want to use
+     // https://firebase.google.com/docs/web/setup#available-libraries
+   
+     // Your web app's Firebase configuration
+     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+     const firebaseConfig = {
+         apiKey: "AIzaSyBf_inD4Hqb2zqkmCuha69YEEgZ0EvSdDI",
+     authDomain: "canteen-live-status-65e71.firebaseapp.com",
+      databaseURL: "https://canteen-live-status-65e71-default-rtdb.firebaseio.com",
+     projectId: "canteen-live-status-65e71",
+     storageBucket: "canteen-live-status-65e71.appspot.com",
+     messagingSenderId: "427128725985",
+     appId: "1:427128725985:web:161d9f41d3e126af35b2a0",
+     measurementId: "G-YH01SPNTT2"
+     };
+   
+     // Initialize Firebase
+     const app = initializeApp(firebaseConfig);
+     const database = getDatabase(app);
+     const auth= getAuth();
+     const letsSignOut = document.getElementById('signOut');
+     const form = document.getElementById('contactForm');
+     const signin = document.querySelector("#signin");
+signin.addEventListener('click', (e)=>{
+var email__ = document.getElementById('email').value;
+var Pass__ = document.getElementById('Pass').value;
+
+signInWithEmailAndPassword(auth, email__, Pass__)
+.then((userCredential) => { 
+// Signed in 
+const user = userCredential.user;
+alert('WeLCOME ' + email__);
+window.location.href = "dashboard";
+localStorage.setItem('myData', email__);
+})
+.catch((error) => {
+const errorCode = error.code;
+const errorMessage = error.message;
+alert(errorCode + errorMessage);
+})}
+)
+
+const dbRef = ref(getDatabase());
+
+function checking() {get(child(dbRef, `users/` + document.getElementById('user_name').value) + "/email").then((snapshot) => {
+if(snapshot.val()==document.getElementById('updating_email').value){
+console.log("correct email id");
+}
+else {
+console.log("No data available");
+}
+}).catch((error) => {
+console.error("error_cateen_name_Wala");
+});
+}
+function UpdateData(){
+
+update(ref(database, "users/" + document.getElementById('user_name').value ),{
+
+status:  document.getElementById('new_status').value,  
+})
+.then(()=>{
+ alert("data updated successfully");
+ document.getElementById('updating_stats').style.display = 'none';
+document.getElementById('viewstatus').style.display= 'block';
+
+})
+.catch((error)=>{
+ alert("please try again" + "error :" + errorCode);
+});
+}
+</script>

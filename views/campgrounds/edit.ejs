@@ -1,0 +1,52 @@
+<% layout('layout/boilerPlate') %>
+
+<!-- <body>
+    <h1>Edit Campground</h1>
+    <form action="/campground/<%= camp._id%>?_method=PUT" method="post">
+        <label for="name">name of campground : </label>
+        <input type="text" name="campground[title]" value="<%= camp.title %>" id="name">
+        <br> <br>
+        <label for="location">enter location </label>
+        <input type="text" name="campground[location]" value="<%= camp.location %>" id="Location">
+
+        <input type="submit">
+    </form> -->
+
+    <% layout('layout/boilerPlate') %>
+
+<div class="row">
+    <h1 class="text-center">Edit Course</h1>
+    <div class="col-6 offset-3">
+    <form action="/campground/<%= camp._id%>?_method=PUT" method="post">
+            <div class="mb-3">
+                <label class="form-label" for="name">Name of Course  </label>
+                <input type="text" class="form-control" name="campground[title]" value="<%= camp.title %>" placeholder="name" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="location" class="form-label">Enter Institute Name </label>
+                <input type="text" class="form-control" name="campground[location]" value="<%= camp.location %>" placeholder="location" id="Location">
+            </div>
+        <div class="mb-3">
+            <label for="Price" class="form-label">Price(if any) </label>
+            <div class="input-group mb-3">
+                <span class="input-group-text">&#8377;</span>
+                <input type="text" id="Price" class="form-control" value="<%= camp.price %>"  aria-label="Amount (in Rupees)" name="campground[price]">
+                <span class="input-group-text">.00</span>
+            </div>
+        </div>
+            <div class="mb-3">
+                <label for="image" class="form-label">Image Url</label>
+                <input type="text" class="form-control" name="campground[image]" value="<%= camp.image %>" placeholder="image" id="image">
+            </div>
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea type="text" class="form-control" name="campground[description]" value="<%= camp.description %>" placeholder="description" id="description"></textarea>
+            </div>
+            <div class="mb-3 ">
+                <input type="submit" class="btn btn-success" value="Update Campground">
+            </div>    
+        </form>
+    </div>
+</div>
+
+

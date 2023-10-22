@@ -1,0 +1,186 @@
+.desktop-7-child,
+.desktop-7-inner {
+  position: absolute;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.desktop-7-child {
+  top: 512px;
+  left: 896px;
+  background-color: var(--color-white);
+  width: 333px;
+  height: 69px;
+}
+.desktop-7-inner {
+  top: 618px;
+  left: 895px;
+  background-color: #fffdfd;
+  width: 335px;
+  height: 71px;
+}
+.rectangle-div {
+  position: absolute;
+  top: 762px;
+  left: 896px;
+  background-color: var(--color-dodgerblue);
+  width: 336px;
+  height: 47px;
+}
+.search-1-icon,
+.whatsapp-image-2023-09-27-at-0 {
+  position: absolute;
+  top: 844px;
+  left: 1001px;
+  width: 28px;
+  height: 29px;
+  object-fit: cover;
+}
+.whatsapp-image-2023-09-27-at-0 {
+  top: 221px;
+  left: 54px;
+  width: 704px;
+  height: 721px;
+}
+.login,
+.sign-in-to {
+  position: absolute;
+  display: inline-block;
+}
+.login {
+  top: 771px;
+  left: 1024px;
+  color: var(--color-white);
+  width: 100px;
+  height: 28px;
+}
+.sign-in-to {
+  top: 334px;
+  left: 892px;
+  font-size: 28px;
+  width: 255px;
+  height: 62px;
+}
+.enter-email,
+.password {
+  position: absolute;
+  top: 641px;
+  left: 919px;
+  font-weight: 300;
+}
+.enter-email {
+  top: 535px;
+}
+.facebook-icon {
+  position: absolute;
+  top: 837px;
+  left: 1070px;
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+}
+.forgot-password {
+  position: absolute;
+  top: 716px;
+  left: 1106px;
+  font-size: 15px;
+  font-weight: 200;
+}
+.if-you-dont {
+  margin: 0;
+}
+.register-here {
+  color: var(--color-dodgerblue);
+}
+.if-you-dont-container {
+  position: absolute;
+  top: 436px;
+  left: 896px;
+  font-weight: 600;
+}
+.navigation-bar-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  width: 1440px;
+  height: 158px;
+}
+.sign-up {
+  position: absolute;
+  top: 92px;
+  left: 1259px;
+}
+.navigation-bar-item {
+  position: absolute;
+  top: 76px;
+  left: 1319px;
+  border-radius: 26px;
+  background-color: #9b9b9b;
+  width: 66px;
+  height: 46px;
+}
+.log-in {
+  position: absolute;
+  top: 92px;
+  left: 1335px;
+}
+.image-removebg-preview-1-1 {
+  position: absolute;
+  top: 80px;
+  left: 134px;
+  width: 81px;
+  height: 54px;
+  object-fit: cover;
+}
+.navigation-bar-inner {
+  position: absolute;
+  top: 82.5px;
+  left: 120.5px;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1px;
+  height: 49px;
+}
+.navigation-bar-child1 {
+  position: absolute;
+  top: 83px;
+  left: 216px;
+  background-color: #b5b4b4;
+  width: 74px;
+  height: 38px;
+}
+.navigation-bar-child2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #aeaeae;
+  width: 1440px;
+  height: 47px;
+}
+.emblem-removebg-preview-2-icon {
+  position: absolute;
+  top: 80px;
+  left: 64px;
+  width: 32px;
+  height: 51px;
+  object-fit: cover;
+}
+.navigation-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1440px;
+  height: 158px;
+  font-size: var(--font-size-xs);
+}
+.desktop-7 {
+  position: relative;
+  background-color: var(--color-white);
+  width: 100%;
+  height: 1024px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

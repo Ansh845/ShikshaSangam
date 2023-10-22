@@ -1,0 +1,153 @@
+<% layout('layout/boilerPlate') %>
+<style>
+    .good{
+        background-image: url("/computer.png");
+        visibility:hidden;
+        background-color: black;
+    }
+    .carousel{
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .slide{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+</style>
+<br><br><br><br><br><br><br><br>
+
+
+<section style="padding: 5%;margin-top: -6%;height: 70%;"  >
+    <section style="display: flex;flex-direction: row;"> 
+           <img src="https://www.india.gov.in/sites/upload_files/npi/files/Ek-Bharat-Sanskriti-Sangam.jpg" alt="" style="width: 100%;cursor: pointer;" onclick="fn()">&nbsp;
+</section>
+
+
+    <!-- <img height="400px" width="900px"  src="/WhatsApp Image 2023-09-27 at 11.33.13 AM.jpeg" alt="">
+    <img height="400px"  src="https://www.freepnglogos.com/uploads/modi-png/modi-home-iscs-inter-state-council-secretariat-government-16.png" alt=""> -->
+ 
+<section style="padding: 1%;display: flex;flex-direction: row;justify-content:space-evenly;">
+    <div class="container" style="background-color: white;float: left;width: 30%;margin: 2%;">
+        <h2 style="border-bottom: orange 3px solid;width:fit-content;">Quick Links</h2>
+        <ul style="list-style-type: none;scroll-behavior: auto;">
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"> <a href="https://www.aicte-india.org/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">All India Council for Technical Education</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="http://www.pmindia.gov.in/en/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">Office of Prime Minister of India</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="https://epathshala.nic.in/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">E-Pathshala : Revolutionizing online education in India</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="https://ncert.nic.in/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">National Council of Education- research and training</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="https://www.education.gov.in/major-initiatives"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">Ministry of Education</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="https://swayam.gov.in/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">Swayam: Learning App by Government</a></li>
+            <li  style="text-decoration: none;background-color: rgb(255, 255, 255);translate: -28px;width: 120%;border-bottom: rgb(151, 143, 143) 2px solid;"><a href="https://www.mygov.in/"  style="text-decoration: none;color: rgb(88, 124, 241);font-weight: 600;">myGov - Government at your desktop</a></li>
+        </ul>
+    </div>
+    <div class="container" style="background-color: white;float: right;width: 60%;margin: 2%;">
+        <h2 style="text-align: center;">Welcome to AICTE</h2>
+            <p>The All India Council for Technical Education (AICTE) is a statutory body in India responsible for regulating and overseeing technical education and management education in the country. Established in 1945, it operates under the Ministry of Education, Government of India. AICTE plays a pivotal role in setting standards, approving institutions, and ensuring the quality of technical and management programs offered by various colleges and universities across India. It is committed to fostering innovation, research, and development in the field of technical education while promoting equity and access to quality education. AICTE's efforts contribute significantly to the growth and excellence of technical education in India.</p>
+    </div>
+</section><br>
+<section style="padding: 1%;margin-left: 3.5%;">
+    <h2 style="border-bottom: orange 3px solid;width:fit-content;">Features</h2>
+    <br><br>
+    <div class="container" style="display: flex;justify-content: space-around;flex-direction: row;">
+            <span style="width: 15%;height: 15%;border-right: 4px rgb(172, 164, 164) solid;padding-right: 2%;"> <img src="/resume.png" alt="" height="100%" width="100%">
+                <br><br>
+                <h4 style="text-align: center;">Overview</h4>
+                <p>The website focusses on bringing an environment of learning and ease the same for students by providing one stop education portal. </p>
+            </span>
+            <span style="width: 15%;height: 15%;border-right: 4px rgb(172, 164, 164) solid;padding-right: 2%;"> <img src="/education.png" alt="" height="100%" width="100%"> <br><br>
+                <h4 style="text-align: center;">Curriculum </h4>
+                <p>The website gives freedom to institutions to develop their course curriculum provide lecture videos and course material here directly. </p>
+            </span>
+            <span style="width: 15%;height: 15%;border-right: 4px rgb(172, 164, 164) solid;padding-right: 2%;"> <img src="/building.png" alt="" height="100%" width="100%"> <br><br>
+                <h4 style="text-align: center;">Overview</h4>
+                <p>ShikshaSangam invites various institutes to participate and launch their online courses to this website and make it public. </p>
+            </span>
+            <span style="width: 15%;height: 15%;border-right: 4px rgb(172, 164, 164) solid;padding-right: 2%;"> <img src="/computer.png" alt="" height="100%" width="100%"> <br><br>
+                <h4 style="text-align: center;">E-Learning</h4>
+                <p>Why take pain of surfing to many websites? Let the government take you to the realm of E-Learning with the gyuidance of affiliated institutes </p>
+            </span>
+            <span style="width: 15%;height: 15%;"> <img src="/feedback.png" alt="" height="85%" width="85%">
+                <br><br>
+                <h4 style="text-align: center;translate: -14%;">Feedback</h4>
+                <p>Feedbacks are a way to help this website upgrade. Give your valuable words back to us and bring forth any adjustments or features you need. </p>
+            </span>
+    </div>
+</section>
+
+<br>
+<section style="padding: 1%;margin-left: 3.5%;">
+    <h2 style="border-bottom: orange 3px solid;width:fit-content;">Initiatives</h2>
+    <br><br>
+    <div class="container" style="display: flex;justify-content: space-around;flex-direction: row;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/nep.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title"> New Education Policy 2020</h5>
+              <p class="card-text">The Government of India launched the new education policy on July 29th,2020, which mainly focuses on the early childhood education of children in India and improving the quality of education in government schools.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/swayam.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">SWAYAM</h5>
+              <p class="card-text">SWAYAM is an e-learning platform available for students across India, funded by the central government of India. This online learning platform was launched by the GOI in 2017, that turned out to be very useful during a pandemic.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/teachers.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Qualification of Teachers</h5>
+              <p class="card-text">The quality of education was dropping in India due to less-qualified teachers and addressing this issue the Government of India (GOI) amended Section 23(2) of the RTE under which the in-service training period was increased for underqualified teachers.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="pisa.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Program for International Students Assessment (PISA)</h5>
+              <p class="card-text">The GOI is planning to participate in the program for International Students Assessment (PISA), conducted by the Organization for Economic Cooperation and Development (OECD) in 2021.</p>
+            </div>
+          </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/ssa.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style="text-align: center;">Sarva Shiksha Abhiyan</h5>
+              <p class="card-text">The Sarva Shiksha Abhiyan is a Government of India initiative launched in 2001, and to date around 83 amendments have already been made under this scheme.</p>
+            </div>
+          </div>
+    </div>
+</section>
+
+
+<br><br>
+
+</section>
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+ <script>
+  var typed = new Typed(".auto-type",{
+    strings:[" Ebooks..."," Knowledge.."," Learning...!!"],
+    typeSpeed: 150,
+    backSpeed: 50,
+    loop: true,
+  })
+  function fn(){
+  const image=document.getElementById("image_changer");
+  setTimeout(()=>{
+    image.classList.add('good');
+  },2000);
+  }
+
+
+function nextSlide() {
+  const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+    console.log("changing bro !");
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 1000);
+ </script>

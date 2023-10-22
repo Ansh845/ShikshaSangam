@@ -1,0 +1,17 @@
+<% layout('layout/boilerPlate') %>
+
+    <section class="exp rounded vh-20 p-5 mt-5" style="background-color: beige;display: flex;justify-content: center;align-items: center;align-content: center;box-shadow: 0px 0px 10px black;height: 70%;">
+        <img src="https://placementor-iit-dhanbad.vercel.app/static/media/Suitboi2.135cdc17.svg" alt="" height="65%" width="65%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <form action="" style="display: flex;flex-direction: column;" method="post">
+            <label for="inst">Mention your institute</label>
+            <input type="text" id="inst" placeholder="IIT(ISM)">
+            <br>
+            <label for="dept">Mention your Department</label>
+            <input type="text" id="dept" placeholder="CSE" required><br>
+            <label for="phn">Contact Number</label>
+            <input type="string" maxlength="10" required id="phn" placeholder="7694840849">
+            <br><br>
+            <button type="button" class="btn btn-primary" onclick="upload()">Continue</button>
+        </form>
+    </section>
+

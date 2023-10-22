@@ -1,0 +1,303 @@
+.homeinstructor-child {
+    position: absolute;
+    top: -16px;
+    left: -1px;
+    border-radius: var(--br-xs);
+    background-color: var(--color-gainsboro-100);
+    width: 172px;
+    height: 1057px;
+  }
+  .homeinstructor-item {
+    position: absolute;
+    top: 217px;
+    left: 0;
+    background-color: var(--color-orangered-100);
+    width: 19px;
+    height: 114px;
+  }
+  .doorbell-icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+  }
+  .group-child {
+    position: absolute;
+    top: 0;
+    left: 70px;
+    border-radius: 50%;
+    background-color: var(--color-gainsboro-100);
+    width: 47px;
+    height: 47px;
+  }
+  .kr {
+    position: absolute;
+    top: 13px;
+    left: 82px;
+    font-weight: 600;
+  }
+  .doorbell-parent {
+    position: absolute;
+    top: 28px;
+    left: 1253px;
+    width: 117px;
+    height: 47px;
+    font-size: var(--font-size-mid);
+  }
+  .homeinstructor-inner {
+    position: absolute;
+    top: 189px;
+    left: 290px;
+    background-color: var(--color-gainsboro-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 954px;
+    height: 209px;
+  }
+  .jump-into-course {
+    position: absolute;
+    top: 261px;
+    left: 332px;
+    font-weight: 300;
+    font-family: var(--font-poppins);
+  }
+  .home-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 88px;
+    height: 69px;
+    object-fit: cover;
+  }
+  .home {
+    position: absolute;
+    top: 69px;
+    left: 1px;
+    font-weight: 600;
+  }
+  .home-parent {
+    position: relative;
+    width: 88px;
+    height: 105px;
+  }
+  .frame-div {
+    position: absolute;
+    top: 188px;
+    left: 32.5px;
+    height: 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) var(--padding-3xs);
+    box-sizing: border-box;
+  }
+  .e-learning-icon {
+    position: relative;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+  .courses {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 600;
+  }
+  .courses-wrapper {
+    position: relative;
+    width: 122px;
+    height: 36px;
+  }
+  .e-learning-parent {
+    position: absolute;
+    top: 334px;
+    left: 15.5px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) var(--padding-3xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+  }
+  .chat-message-icon {
+    position: relative;
+    width: 63px;
+    height: 63px;
+    object-fit: cover;
+  }
+  .message-wrapper {
+    position: relative;
+    width: 132px;
+    height: 36px;
+  }
+  .chat-message-parent {
+    position: absolute;
+    top: 486px;
+    left: 10.5px;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) var(--padding-3xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+  }
+  .positive-dynamic-icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+  }
+  .progress-wrapper {
+    position: relative;
+    width: 130px;
+    height: 36px;
+  }
+  .positive-dynamic-parent {
+    position: absolute;
+    top: 637px;
+    left: 11.5px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) var(--padding-3xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+  }
+  .resources-wrapper {
+    position: relative;
+    width: 153px;
+    height: 36px;
+  }
+  .books-parent {
+    position: absolute;
+    top: 790px;
+    left: 0;
+    height: 167px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-xl) var(--padding-3xs);
+    box-sizing: border-box;
+    gap: var(--gap-3xs);
+  }
+  .rectangle-div {
+    position: absolute;
+    top: 244px;
+    left: 912px;
+    background-color: rgba(91, 162, 111, 0.63);
+    width: 289px;
+    height: 70px;
+  }
+  .create-your-own {
+    position: absolute;
+    top: 266px;
+    left: 947px;
+    font-size: 18px;
+    display: inline-block;
+    font-family: var(--font-poppins);
+    width: 244px;
+  }
+  .homeinstructor-child1 {
+    position: absolute;
+    top: 498px;
+    left: 293px;
+    background-color: var(--color-gainsboro-100);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    width: 954px;
+    height: 281px;
+  }
+  .whether-youve-been {
+    position: absolute;
+    top: 598px;
+    left: 653px;
+    font-size: var(--font-size-xl);
+    display: inline-block;
+    width: 541px;
+  }
+  .create-an-engaging {
+    position: absolute;
+    top: 549px;
+    left: 653px;
+    font-weight: 600;
+  }
+  .homeinstructor-child2,
+  .line-div {
+    position: absolute;
+    top: 447.5px;
+    left: 337.5px;
+    border-top: 1px solid var(--color-black);
+    box-sizing: border-box;
+    width: 370.01px;
+    height: 1px;
+  }
+  .homeinstructor-child2 {
+    left: 805.5px;
+  }
+  .tools-icon {
+    position: absolute;
+    top: 426px;
+    left: 740px;
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+  }
+  .get-started,
+  .have-questions-here {
+    position: absolute;
+    top: 858px;
+    left: 494px;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-poppins);
+  }
+  .get-started {
+    top: 722px;
+    left: 653px;
+    text-decoration: underline;
+    color: #fb5607;
+  }
+  .image-2-icon {
+    position: absolute;
+    top: 901px;
+    left: 276px;
+    width: 1027px;
+    height: 220px;
+    object-fit: cover;
+  }
+  .black {
+    position: absolute;
+    height: 5.38%;
+    width: 4.43%;
+    top: 14.56%;
+    right: 65.71%;
+    bottom: 80.05%;
+    left: 29.86%;
+  }
+  .woman-studies-geography-with-b {
+    position: absolute;
+    top: 515px;
+    left: 339px;
+    width: 246px;
+    height: 246px;
+    object-fit: cover;
+  }
+  .homeinstructor {
+    position: relative;
+    background-color: var(--color-white);
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+    text-align: left;
+    font-size: var(--font-size-11xl);
+    color: var(--color-black);
+    font-family: var(--font-inter);
+  }
+  
